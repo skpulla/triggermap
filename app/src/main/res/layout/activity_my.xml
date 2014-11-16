@@ -1,36 +1,25 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="0px"
     tools:context=".MyActivity">
 
-    <TableRow>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
-    <TextView android:id="@+id/facebookText"
-        android:text="@string/facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    </TableRow>
-    <Button android:id="@+id/facebook"
-        android:text="@string/facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/relaxMe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="relaxMe"
+            android:src="@drawable/relax_me" />
+
+    </RelativeLayout>
 
 
-    <TableRow>
-        <TextView android:id="@+id/fitbitText"
-            android:text="@string/fitbit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button android:id="@+id/fitbit"
-            android:text="@string/fitbit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </TableRow>
-</TableLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0px"
+    tools:context="com.triggermap.triggermap.HomeSpace">
+
+    <LinearLayout
+        android:layout_marginTop="-150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:id="@+id/virtualMentor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/virtual_mentor" />
+
+        <ImageButton
+            android:id="@+id/guideMe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/guide_me" />
+
+        <ImageButton
+            android:id="@+id/selfHelp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/self_help" />
+
+        <ImageButton
+            android:id="@+id/bio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bio" />
+
+    </LinearLayout>
+
+</LinearLayout>
