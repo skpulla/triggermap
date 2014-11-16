@@ -23,4 +23,22 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/OAuth.jar')
     compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.newrelic.agent.android:android-agent:4.+'
 }
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:4.+"
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'android'
+apply plugin: 'newrelic'

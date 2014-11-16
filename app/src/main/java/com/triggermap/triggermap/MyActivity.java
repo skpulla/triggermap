@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.newrelic.agent.android.NewRelic;
+
 public class MyActivity extends Activity {
 
     public final static String MyMessage = "hello world!";
@@ -15,6 +17,11 @@ public class MyActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        NewRelic.withApplicationToken(
+                "AAa6ff16ea8a0c215eb3a13c7f17a33d2534202373"
+        ).start(this.getApplication());
+
         ActionBar actionBar = getActionBar();
         actionBar.hide();
         setContentView(R.layout.activity_my);
